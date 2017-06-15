@@ -1,0 +1,21 @@
+1.首先创建本地仓库，输入：mkdir xxx_repository,cd xxx_repository,git init
+2.生成sshkey:ssh-keygen -t rsa -C "your.email@example.com" -b 4096
+3.在github里的settings里添加一个新的SSH key,复制刚才生成的id_rsa.pub内容
+4.在GitHub账户中增加一个repository，xxx_test
+4.在本地电脑上连接github服务器：git remote add origin git@github.com/github_username/xxx_test
+5.开始上传下载文件：git add file,git commit -m “file”,git push origin master
+
+
+
+常见错误：
+
+1.git push报错error: failed to push some refs to 'git@github.com:
+原因： 
+GitHub远程仓库中的README.md文件不在本地仓库中。 
+解决方案：
+
+$ git pull --rebase origin master
+$ git push -u origin master
+
+
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html
