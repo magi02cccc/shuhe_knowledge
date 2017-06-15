@@ -1,0 +1,23 @@
+1.创建项目 new project
+  Maven-archetype-webapp
+  Groupid demo3
+  artifactId demo3
+  Maven configuration
+    Home directory:/User/wangewnkai/work/maven/apache-maven-3.5.0
+    User settings file:/user/wangwenkai/work/maven/apache-maven-3.5.0/conf/settings.xml
+    Local repository:/user/wangwenkai/work/maven/mavenRepos
+  Project name :demo3
+2.run…
+  Tomcat server
+    Name : demo3
+    Application server:tomcat 7.0.78
+    After launch:default
+    http://localhost:8084/demo3/
+    Tomcat server settings
+      http port :8084
+      jmx port:1101
+    
+  单击fix
+    选择demo3:war exploded
+  
+  
